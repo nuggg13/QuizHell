@@ -8,14 +8,14 @@ Di tengah pengerjaan, Rage System menghadirkan tombol yang menghindar, countdown
 
 ## Fitur utama
 
-- **Akun creator** — registrasi, login, dan pengelolaan quiz milik sendiri.
-- **Quiz builder** — soal Multiple Choice dan True / False, urutan soal, timer opsional, serta pilihan Rage Level.
-- **Publish dan berbagi** — simpan draft, publish quiz, bagikan link, atau hentikan akses melalui unpublish.
-- **Dashboard visual** — tampilan bento dengan statistik quiz, attempt selesai, serta filter status dan Rage Level.
-- **Pengerjaan tanpa akun** — player menggunakan nickname, menjawab soal berurutan, dan melihat hasil setelah selesai.
-- **Results & Analytics** — daftar hasil, rata-rata skor, completion rate, distribusi kategori skor, dan soal tersulit.
-- **Export Excel** — unduh hasil player dan ringkasan quiz dalam workbook `.xlsx`.
-- **Tema gelap dan terang** — tampilan responsif untuk desktop dan mobile dengan preferensi tema yang tersimpan.
+- **Akun creator**  registrasi, login, dan pengelolaan quiz milik sendiri.
+- **Quiz builder**  soal Multiple Choice dan True / False, urutan soal, timer opsional, serta pilihan Rage Level.
+- **Publish dan berbagi**  simpan draft, publish quiz, bagikan link, atau hentikan akses melalui unpublish.
+- **Dashboard visual**  tampilan bento dengan statistik quiz, attempt selesai, serta filter status dan Rage Level.
+- **Pengerjaan tanpa akun**  player menggunakan nickname, menjawab soal berurutan, dan melihat hasil setelah selesai.
+- **Results & Analytics**  daftar hasil, rata-rata skor, completion rate, distribusi kategori skor, dan soal tersulit.
+- **Export Excel**  unduh hasil player dan ringkasan quiz dalam workbook `.xlsx`.
+- **Tema gelap dan terang**  tampilan responsif untuk desktop dan mobile dengan preferensi tema yang tersimpan.
 
 ## Rage System
 
@@ -60,5 +60,3 @@ Pertanyaan prank dan interaksi Rage tidak memengaruhi skor. Statistik peserta me
 ## Teknologi
 
 QuizHell menggunakan **PHP native**, **MySQL**, **HTML**, **JavaScript ES modules**, dan **CSS lokal**. Halaman dirender di server, sedangkan interaksi builder, tema, audio, dan Rage System berjalan di browser.
-
-Aplikasi tidak memerlukan framework, package Composer/npm saat runtime, atau proses build frontend. Export Excel dibuat menggunakan PHP `ZipArchive`. Playwright digunakan untuk pengujian browser.
