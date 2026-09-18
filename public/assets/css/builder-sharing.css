@@ -1,0 +1,25 @@
+.builder-shortcuts {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 0;
+    margin-bottom: 12px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+}
+
+.builder-shortcuts .btn {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 12px;
+}
+
+#quiz-sharing {
+    scroll-margin-top: 72px;
+}
+
+.builder-shortcuts ~ .builder-layout .builder-sidebar {
+    top: 72px;
+}

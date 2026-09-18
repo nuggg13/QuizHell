@@ -1,0 +1,1 @@
+<section class="empty-state panel error-page"><span class="eyebrow">ERROR <?= (int) $status ?></span><h1>Plot twist.</h1><p class="muted mt-4"><?= e($message) ?></p><a class="btn btn-primary mt-6" href="<?= e(url('home')) ?>">Ke beranda →</a></section>

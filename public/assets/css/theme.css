@@ -1,0 +1,261 @@
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--panel);
+    color: var(--text);
+}
+
+.theme-toggle:hover {
+    border-color: var(--acid);
+    color: var(--acid);
+}
+
+.theme-moon {
+    display: none;
+}
+
+:root[data-theme=light] .theme-sun {
+    display: none;
+}
+
+:root[data-theme=light] .theme-moon {
+    display: block;
+}
+
+:root[data-theme=light] {
+    color-scheme: light;
+    --bg: #f5f7ee;
+    --panel: #fffef9;
+    --line: #d8dfcd;
+    --text: #20271b;
+    --muted: #5e6855;
+    --acid: #416816;
+    --coral: #b83828;
+    --amber: #865400;
+}
+
+[data-theme=light] .nav-link,
+[data-theme=light] .footer-dot,
+[data-theme=light] .hero-copy,
+[data-theme=light] .home-strip,
+[data-theme=light] .level-frequency,
+[data-theme=light] .quiz-meta {
+    color: #536146;
+}
+
+[data-theme=light] .nav-link:hover {
+    color: var(--acid);
+}
+
+[data-theme=light] .brand-icon,
+[data-theme=light] .mascot,
+[data-theme=light] .horn,
+[data-theme=light] .btn-primary {
+    background: #c3f85c;
+}
+
+[data-theme=light] .btn-primary {
+    border-color: #9bbf56;
+}
+
+[data-theme=light] .btn-primary:hover:not(:disabled) {
+    background: #b5ec4b;
+}
+
+[data-theme=light] .btn-secondary {
+    background: #eaf0de;
+    border-color: #bdcbaa;
+}
+
+[data-theme=light] .btn-secondary:hover {
+    background: #dce8ca;
+}
+
+[data-theme=light] .btn-ghost {
+    color: #4e5b40;
+}
+
+[data-theme=light] .btn-ghost:hover {
+    background: #4168160b;
+}
+
+[data-theme=light] .floating-tag {
+    background: var(--panel);
+    border-color: #bac9a6;
+    box-shadow: 0 8px 24px #273c1417;
+}
+
+[data-theme=light] .mascot {
+    box-shadow: inset -18px -15px 0 #a8df42,0 30px 60px #273c1426;
+}
+
+[data-theme=light] .hell-card {
+    background: linear-gradient(135deg,var(--panel),#fff0e9);
+}
+
+[data-theme=light] .badge.mild,
+[data-theme=light] .rage-choice:has(input:checked) {
+    background: #edf5df;
+    border-color: #a9c287;
+}
+
+[data-theme=light] .badge.annoying,
+[data-theme=light] .rage-choice.annoying:has(input:checked) {
+    background: #fff3d8;
+    border-color: #d9bf86;
+}
+
+[data-theme=light] .badge.hell,
+[data-theme=light] .rage-choice.hell:has(input:checked) {
+    background: #ffede7;
+    border-color: #e3afa1;
+}
+
+[data-theme=light] input:not([type=radio]):not([type=checkbox]):not([type=hidden]),
+[data-theme=light] textarea,
+[data-theme=light] select {
+    background: #ffffff;
+    border-color: #b9c5ab;
+}
+
+[data-theme=light] input::placeholder,
+[data-theme=light] textarea::placeholder {
+    color: #68735c;
+}
+
+[data-theme=light] input:read-only {
+    color: #536146!important;
+}
+
+[data-theme=light] .notice {
+    color: #3e5c24;
+    background: #edf5df;
+    border-color: #b1c894;
+}
+
+[data-theme=light] .notice.error {
+    color: #9f2b1a;
+    background: #fff0ea;
+    border-color: #e0ad9e;
+}
+
+[data-theme=light] .step-number,
+[data-theme=light] .player-avatar {
+    background: #e7efd9;
+}
+
+[data-theme=light] .icon-button {
+    background: #edf2e3;
+    border-color: #bdcbaa;
+    color: #4e5b40;
+}
+
+[data-theme=light] .icon-button:hover:not(:disabled) {
+    border-color: var(--acid);
+    color: var(--acid);
+}
+
+[data-theme=light] .add-question {
+    border-color: #92a775;
+    background: #edf5df;
+}
+
+[data-theme=light] .progress-track {
+    background: #d8e2cb;
+}
+
+[data-theme=light] .question-panel {
+    background: var(--panel);
+}
+
+[data-theme=light] .answer-option {
+    background: #ffffff;
+    border-color: #bcc9ad;
+}
+
+[data-theme=light] .answer-option:hover {
+    border-color: #789655;
+}
+
+[data-theme=light] .answer-option:has(input:checked) {
+    background: #edf5df;
+    border-color: var(--acid);
+}
+
+[data-theme=light] .answer-option .letter {
+    border-color: #bcc9ad;
+}
+
+[data-theme=light] .answer-option:has(input:checked) .letter {
+    background: #c3f85c;
+    border-color: var(--acid);
+}
+
+[data-theme=light] .rage-toast {
+    background: #c3f85c;
+}
+
+[data-theme=light] .rage-overlay {
+    background: #26321c99;
+}
+
+[data-theme=light] .rage-dialog {
+    border-color: #93ab73;
+}
+
+[data-theme=light] .rage-picture-overlay .rage-dialog img {
+    background: #eaf0e1;
+}
+
+[data-theme=light] .loader {
+    border-color: #cadbb3;
+    border-top-color: var(--acid);
+}
+
+[data-theme=light] .rage-toast.rage-countdown {
+    background: none;
+    color: var(--text);
+}
+
+[data-theme=light] .score-decoration {
+    color: #41681626;
+}
+
+[data-theme=light] th {
+    background: #edf2e3;
+}
+
+@media (max-width: 460px) {
+    .site-header {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .site-header nav {
+        gap: 8px;
+    }
+
+    .site-header .brand {
+        font-size: 1.2rem;
+    }
+
+    .site-header .brand-icon {
+        margin-right: 8px;
+    }
+
+    .site-header .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .theme-toggle {
+        width: 36px;
+    }
+}

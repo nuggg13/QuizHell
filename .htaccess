@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(?:app|config|database|docs|tests|\.git|\.codex|\.agents)(?:/|$) - [F,L,NC]
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
